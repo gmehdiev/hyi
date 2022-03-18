@@ -1,9 +1,17 @@
-`use strict`;
+let num = Math.floor(Math.random() * 10);
 
-const category = 'toys';
+let numGamer;
+let a = 1;
 
-console.log(`https://someurl.com/${category}/5`);
+numGamer = +prompt('число', '');
 
-const user = "biba";
+while (a != 0){
+   if (numGamer != num){
+    numGamer = +prompt('неправильно, еще раз введи число', '');
+   }else{
+       a--;
+   }
 
-alert(`привет, ${user}`);
+
+}
+alert('Правильно');
